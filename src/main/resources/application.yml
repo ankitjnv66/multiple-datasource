@@ -1,0 +1,17 @@
+server:
+  port: 8090
+  
+spring:
+  application:
+    name: multiple-datasource
+  db-profile-service:
+    driverClassName: com.mysql.jdbc.Driver
+    jdbc-url: "jdbc:mysql://localhost:3306/profileservice?autoreconnect=true"
+    password: "password"
+    username: "root"
+  db-task-service:
+    driverClassName: com.mysql.jdbc.Driver
+    jdbc-url: "jdbc:mysql://localhost:3306/taskservice?autoreconnect=true"
+    password: "password"
+    username: "root"
+
